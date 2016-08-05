@@ -3,7 +3,7 @@ layout: post
 title:  "Sqlite 멀티 스레드 접근 관련 삽질 이야기"
 date:   2016-08-15
 ---
-기본적으로 sqlite는 하나의 연결만 허용하며 write 중일때는 read를 하지 못하고 read 중일때 write 하지 못한다
+기본적으로 sqlite는 하나의 연결만 허용하며 write 중일때는 read를 하지 못하고 read 중일때 write 하지 못한다<br />
 보통의 경우에는 문제 되지않지만 현재 내가 개발중인 앱에서는 멀티 스레드로 접근을 하는 경우가 발생하여서 문제가 발생하였다
 그래서 생각해낸 방법이 write를 할때는 기존 테이블에 하고 read 할때는 가상의 테이블을 이용해서 가져오기로 하였다
 
@@ -20,13 +20,13 @@ date:   2016-08-15
 
 {% highlight ruby %}
 
-CREATE VIEW " + VIEW_TABLE + " AS " +
-                " select "+
-                COLUMN_BLACK_LIST_NORMALIZED_PHONE+" , "+
-                COLUMN_BLACK_LIST_PHONE+" , "+
-                COLUMN_BLACK_LIST_PHONE_TOKEN+" , "+
-                COLUMN_BLACK_LIST_FILTER_TYPE+" from "+
-                DATABASE_TABLE
+      CREATE VIEW " + VIEW_TABLE + " AS " +
+      " select "+
+      COLUMN_BLACK_LIST_NORMALIZED_PHONE+" , "+
+      COLUMN_BLACK_LIST_PHONE+" , "+
+      COLUMN_BLACK_LIST_PHONE_TOKEN+" , "+
+      COLUMN_BLACK_LIST_FILTER_TYPE+" from "+
+      DATABASE_TABLE
 
 {% endhighlight %}
 
