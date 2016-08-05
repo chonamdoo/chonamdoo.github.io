@@ -1,5 +1,5 @@
 title: 즐길 줄 아는 개발자가 되자
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+# description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
 url: http://chonamdoo.github.io
 baseurl: ""
@@ -11,18 +11,18 @@ highlighter: rouge
 gems: [jekyll-paginate]
 paginate: 5
 
-navigation:
- - title: Home
-   url: /index.html
- - title: About
-   url: /about
- - title: Contact
-   url: /contact
+# navigation:
+#  - title: Home
+#    url: /index.html
+#  - title: About
+#    url: /about
+#  - title: Contact
+#    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
+   github: chonamdoo
+  #  twitter: brianmaierjr
+   facebook: namduj
    email: psymarine@gmail.com
 
 google_analytics: "UA-58263416-1"
