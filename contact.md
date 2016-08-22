@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contact Long Haul
+title: Contact CHO NAM DOO
 ---
 
 <div id="contact">

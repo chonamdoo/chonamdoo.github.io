@@ -10,9 +10,9 @@ date:   2016-08-15
 가상의 테이블을 생성하는 방법으로 VIEW TABLE 과 VIRTUAL TABLE 두가지를 고려했는데 VIRTUAL TABLE 로 생성하게 되면
 사진에서 보듯이 테이블이 너무 많이 생성되어 버리는 문제가 있다.<br />
 
-<img src="{{ '/images/2016/08/2016-08-15-sqlite-post/view_table_image.png' | prepend: site.baseurl }}" alt="">
+<!-- <img src="{{ '/images/2016/08/2016-08-15-sqlite-post/view_table_image.png' | prepend: site.baseurl }}" alt=""> -->
 
-<!-- ![chrome-web-app-example](/images/2016/08/2016-08-15-sqlite-post/view_table_image.png) -->
+![chrome-web-app-example](/images/2016/08/2016-08-15-sqlite-post/view_table_image.png)
 
 
 그래서 VIEW TABLE 로 생성을 하기로 정하고 관련 문법을 찾아 봤다.<br />
