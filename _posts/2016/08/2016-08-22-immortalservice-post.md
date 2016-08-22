@@ -17,8 +17,6 @@ Notification 객체.setProperty(Notification.PRIORITY_MIN)
 [관련 블로그 ](http://iw90.tistory.com/155)
 <br />
 {% highlight ruby %}
-@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
-    @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
 
       startForeground(1,new Notification());
