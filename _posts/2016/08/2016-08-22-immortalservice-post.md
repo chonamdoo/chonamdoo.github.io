@@ -16,22 +16,25 @@ Notification 객체.setProperty(Notification.PRIORITY_MIN)
 이걸 해주지 않으면 동작 되지 않을수도 있습니다.<br />
 [관련 블로그 ](http://iw90.tistory.com/155)
 <br />
+
+
 {% highlight ruby %}
-    public int onStartCommand(Intent intent, int flags, int startId) {
 
-      startForeground(1,new Notification());
+public int onStartCommand(Intent intent, int flags, int startId) {
+  startForeground(1,new Notification());
 
-      NotificationManager nm = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
-      Notification notification;
-      notification = new Notification.Builder(getApplicationContext())
-          .setContentTitle("")
-          .setContentText("")
-          .setPriority(Notification.PRIORITY_MIN)
-          .build();
-      nm.notify(startId, notification);
-      nm.cancel(startId);
-      return Service.START_STICKY;
-    }
+  NotificationManager nm = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+  Notification notification;
+  notification = new Notification.Builder(getApplicationContext())
+      .setContentTitle("")
+      .setContentText("")
+      .setPriority(Notification.PRIORITY_MIN)
+      .build();
+  nm.notify(startId, notification);
+  nm.cancel(startId);
+  return Service.START_STICKY;
+}
+
 {% endhighlight %}
 
 핵심 코드 입니다.<br />
