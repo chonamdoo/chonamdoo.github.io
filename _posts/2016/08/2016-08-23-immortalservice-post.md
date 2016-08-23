@@ -78,11 +78,11 @@ public void onCreate() {
 
 {% endhighlight %}
 
-EcmoService 서비스 사용전
+EcmoService 서비스 사용전<br />
 com.couchgram.privacycall/u0a10196 (bg-services)
 
-EcmoService 서비스 사용후
-com.couchgram.privacycall/u0a10196 (fg-service)
+EcmoService 서비스 사용후<br />
+com.couchgram.privacycall/u0a10196 (fg-service)<br />
 
 변경된것을 보실수 있습니다.
 
