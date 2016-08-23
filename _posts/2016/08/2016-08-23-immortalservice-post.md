@@ -66,7 +66,7 @@ public class EcmoService extends Service{
 
 {% endhighlight %}
 
-그리고 foreground service를 하고싶은 곳에서 onCreate 메소드 안에서</br>
+그리고 foreground service를 하고싶은 곳에서
 
 {% highlight ruby %}
 public void onCreate() {
