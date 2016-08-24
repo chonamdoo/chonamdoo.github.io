@@ -10,7 +10,7 @@ date:   2016-08-23
 
 {% highlight ruby %}
 
-public class EcmoService extends Service{
+public class ForeGroundService extends Service{
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
@@ -71,8 +71,8 @@ foreground service를 하고싶은 Service에서
 {% highlight ruby %}
 public void onCreate() {
   super.onCreate();
-  EcmoService.startForeground(this);
-  Intent localIntent = new Intent(this, EcmoService.class);
+  ForeGroundService.startForeground(this);
+  Intent localIntent = new Intent(this, ForeGroundService.class);
   startService(localIntent);
 }
 
