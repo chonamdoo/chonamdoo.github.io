@@ -62,7 +62,7 @@ public class ForeGroundService extends Service{
 -매니페스트
 
 {% highlight ruby %}
-<service android:exported="false" android:name=".service.EcmoService" android:process=":locker" />
+<service android:exported="false" android:name=".service.ForeGroundService" android:process=":locker" />
 
 {% endhighlight %}
 
